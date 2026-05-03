@@ -56,8 +56,8 @@
 const originalUnityLoaderFetch = fetch;
 fetch = async function (url, ...args) {
     if (url.endsWith("/BankRobbery2.data.unityweb")) {
-        const part1 = await originalUnityLoaderFetch("https://cdn.jsdelivr.net/gh/oz-53-b/z@main/Build/BankRobbery2_part1.data.unityweb");
-        const part2 = await originalUnityLoaderFetch("https://cdn.jsdelivr.net/gh/oz-53-b/z@main/Build/BankRobbery2_part2.data.unityweb");
+        const part1 = await originalUnityLoaderFetch("https://cdn.jsdelivr.net/gh/ixl-math-learning/ixl-mirror-342@main/m/gh/oz-53-b/z/main/Build/BankRobbery2_part1.data.unityweb");
+        const part2 = await originalUnityLoaderFetch("https://cdn.jsdelivr.net/gh/ixl-math-learning/ixl-mirror-359@main/m/gh/oz-53-b/z/main/Build/BankRobbery2_part2.data.unityweb");
         
         const part1Buffer = await part1.arrayBuffer();
         const part2Buffer = await part2.arrayBuffer();
